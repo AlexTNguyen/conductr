@@ -127,7 +127,7 @@ function loadPlaylist() {
 	            'onStateChange': onPlayerStateChange
 	          }
 	    });
-	    document.getElementById("controls").innerHTML = '<br><img src="img/back.png" onclick="previous()"/> <img src="img/play.png" id = "play"/> <img src="img/next.png" onclick="next()"/>';
+	    document.getElementById("controls").innerHTML = '<br><img src="img/back.png" onclick="previous()"/> <img src="img/pause.png" id = "play"/> <img src="img/next.png" onclick="next()"/>';
 	    $('#play').on('click', function () {
 	    	play();
 		});
