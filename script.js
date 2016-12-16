@@ -91,12 +91,12 @@ function play() {
 	if(playing) {
 		player.pauseVideo(); 
 		playing = false;
-		document.getElementById("play").src="img/next.png";
+		document.getElementById("play").src="img/play.png";
 	}
 	else {
 		player.playVideo();
 		playing = true;
-		document.getElementById("play").src="img/next.png";
+		document.getElementById("play").src="img/pause.png";
 	}
 }
 
