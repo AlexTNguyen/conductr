@@ -47,11 +47,6 @@ function onPlayerStateChange(event) {
 					list.innerHTML += '<div id = "item' + i + '"><a href="#" id = "video' + i + '" onclick="playVideoAt(' + i + ')" class="list-group-item">' + '<img style="float: left; margin-right: 5px;" src="' + thumbnail + '"/>' +  videos[i].snippet.title + '</a></div>';
 				}
 				document.getElementById("title").innerHTML = videos[player.getPlaylistIndex()].snippet.title;
-			 //    $('.list-group-item').on('click', function() {
-				//     var $this = $(this);
-				//     $('.active').removeClass('active');
-				//     $this.toggleClass('active');
-				// });
 			});
     	});
 	}
@@ -82,13 +77,13 @@ function shuffle() {
 
 function previous() {
 	player.previousVideo();
-	document.getElementById("play").src="/img/pause.png";
+	document.getElementById("play").src="img/pause.png";
 	$('.active').removeClass('active');
 }
 
 function next() {
 	player.nextVideo();
-	document.getElementById("play").src="/img/pause.png";
+	document.getElementById("play").src="img/pause.png";
 	$('.active').removeClass('active');
 }
 
@@ -96,15 +91,14 @@ function play() {
 	if(playing) {
 		player.pauseVideo(); 
 		playing = false;
-		document.getElementById("play").src="/img/play.png";
+		document.getElementById("play").src="img/play.png";
 	}
 	else {
 		player.playVideo();
 		playing = true;
-		document.getElementById("play").src="/img/pause.png";
+		document.getElementById("play").src="img/pause.png";
 	}
 }
-
 
 function googleApiClientReady() {
 	document.getElementById("submit").addEventListener("click", function(){
