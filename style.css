@@ -1,0 +1,96 @@
+html, body, #full {
+	height: 100%;
+	background-color: #b31217; 
+}
+
+#full {
+	display: flex;
+}
+
+#list {
+	/*float: left;*/
+	width: 300px;
+	height: 90%;
+	overflow-y: auto;
+	background-color: white;
+}
+
+.navbar {
+	margin-bottom: 0px;
+	font-weight: bold;
+	border-top-right-radius: 0px !important;
+  	border-top-left-radius: 0px !important;
+  	border-bottom-right-radius: 0px !important;
+  	border-bottom-left-radius: 0px !important;
+  	background-color: #b31217;
+  	color: white;
+  	-webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+}
+
+.navbar > a{
+	color: white;
+}
+
+.list-group-item {
+	overflow: hidden;
+	vertical-align: middle;
+	border-top-right-radius: 0px !important;
+  	border-top-left-radius: 0px !important;
+  	border-bottom-right-radius: 0px !important;
+  	border-bottom-left-radius: 0px !important;
+}
+
+#container {
+	flex: 1;
+	margin-top: 50px;
+	height: 100%;
+	width: 100%;
+	background-color: #b31217; 
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#sensitivity {
+	width: 200px;
+	vertical-align: middle;
+}
+
+#controls > img {
+	display: inline-block;
+	margin: auto;
+	margin-right: 10px;
+}
+
+.navbar-default {
+  background-image: -webkit-linear-gradient(top, #e52d27 0%, #b31217 100%);
+  background-image: -o-linear-gradient(top, #e52d27 0%, #b31217 100%);
+  background-image: linear-gradient(to bottom, #e52d27 0%, #b31217 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff004400', endColorstr='#ff009900', GradientType=0);
+}
+
+.list-group-item.active, .list-group-item.active:hover {
+	background-color: #b31217;
+}
+
+#checkbox {
+	float: right;
+}
+
+#player {
+	margin: 0 auto;
+}
+
+#controls {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#title {
+	margin: 0 auto;
+	margin-top: 10px;
+}
